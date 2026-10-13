@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshitha Avula | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fc;
+      color: #20243a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #171b35;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      color: #a5b4fc;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    nav a:hover {
+      color: #a5b4fc;
+    }
+
+    .hero {
+      padding: 75px 8%;
+      background: linear-gradient(120deg, #e0e7ff, #f7f8fc);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #4338ca;
+      color: white;
+      font-size: 35px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+    }
+
+    .hero h1 span {
+      color: #4338ca;
+    }
+
+    .hero p {
+      margin: 14px auto;
+      max-width: 620px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 11px 22px;
+      background: #4338ca;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .button:hover {
+      background: #312e81;
+    }
+
+    section {
+      padding: 48px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px #20243a0c;
+    }
+
+    .card h3 {
+      color: #4338ca;
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      text-align: center;
+    }
+
+    .skill {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #312e81;
+      padding: 7px 14px;
+      border-radius: 20px;
+      margin: 5px;
+    }
+
+    .project-card {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    footer {
+      background: #171b35;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    a {
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px 6px;
+      }
+
+      section {
+        padding: 35px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>Akshitha Avula</h2>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="avatar">AA</div>
+
+    <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
+    <h1>Hi, I'm <span>Akshitha Avula</span></h1>
+
+    <p>
+      Computer Science and Engineering student interested in
+      web development, software development, and solving
+      real-world problems through technology.
+    </p>
+
+    <a class="button" href="#projects">
+      Explore My Project
+    </a>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <div class="card">
+      I am a B.Tech Computer Science and Engineering student at
+      Vignana Bharathi Institute of Technology, Ghatkesar.
+      I enjoy learning new technologies, developing projects,
+      and improving my programming skills.
+      My goal is to gain practical experience and grow as a developer.
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="card skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">PHP</span>
+      <span class="skill">MySQL</span>
+      <span class="skill">GitHub</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Project</h2>
+
+    <div class="card project-card">
+      <h3>Disaster Information Portal</h3>
+
+      <p>
+        The Disaster Information Portal is a web-based project
+        designed to provide disaster-related information,
+        safety guidelines, and emergency preparedness tips.
+        It covers natural disasters such as floods, earthquakes,
+        cyclones, landslides, and fire accidents.
+      </p>
+
+      <p>
+        <strong>Key Features:</strong>
+      </p>
+
+      <ul>
+        <li>Disaster alerts and information</li>
+        <li>Safety guidelines and precautions</li>
+        <li>Emergency contact information</li>
+        <li>Disaster preparedness awareness</li>
+      </ul>
+
+      <p>
+        <strong>Technologies:</strong>
+        PHP, MySQL, HTML, CSS, JavaScript
+      </p>
+
+      <p>
+        <strong>Status:</strong> Project developed locally;
+        live website link will be added after deployment.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="card" style="text-align: center;">
+      <p>
+        I'm interested in learning, collaborating,
+        and building useful projects.
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/avulaakshitha511-byte"
+           target="_blank"
+           rel="noopener noreferrer">
+          https://github.com/avulaakshitha511-byte
+        </a>
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:avulakshitha511@gmail.com">
+          avulakshitha511@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Akshitha Avula | Personal Portfolio</p>
+  </footer>
+
+</body>
+</html>
